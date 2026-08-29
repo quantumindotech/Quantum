@@ -224,3 +224,42 @@ sequenceDiagram
     BC-->>AG: Transaction Result
     AG->>UI: Human-readable Response
     UI->>H: Hasil Akhir
+# QuantumForge
+
+**Post-Quantum Ledger** dengan AI Guard, MCP, dan Quantum Sovereign Digital Tokenization (QSDT).
+
+[![Token](https://img.shields.io/badge/Token-QSDT-blueviolet?style=for-the-badge)](#)
+[![Genesis](https://img.shields.io/badge/Genesis-v1.0.0-green?style=for-the-badge)](#)
+[![PQC](https://img.shields.io/badge/PQC-ML--DSA--87-blue?style=for-the-badge)](#)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
+**Token**: QSDT — Quantum Sovereign Digital Tokenization  
+**Total Genesis Supply**: 1,000,000,000 QSDT  
+**Max Supply**: 8.081 × 10³⁰ QSDT  
+**Master Genesis Wallet**: `0x512Ae495d7182ce0712dff8D5888CFE0D6da2050`
+
+## Fitur
+- Post-Quantum Signature (ML-DSA-87)
+- ERC-20 + Permit (gasless approval)
+- Ownable2Step (ownership aman)
+- Liquidity Floor + Jaminan Harga
+- Quantum Swap Engine (QSDT → USDC/USDT)
+- Chainlink Oracle siap pakai
+- Model Context Protocol (MCP) ready
+
+## Smart Contracts
+- `QSDT.sol` → Token utama
+- `LiquidityFloor.sol` → Cadangan & Floor Price
+- `QuantumSwapEngine.sol` → Engine Swap + PQC proof
+
+## Installation & Deploy
+
+```bash
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+forge install smartcontractkit/chainlink-brownie-contracts --no-commit
+
+cp .env.example .env
+# isi PRIVATE_KEY, RPC_URL, dll
+
+forge build
+forge script script/DeployAll.s.sol:DeployAll --rpc-url $RPC_URL --broadcast --verify -vvvv
