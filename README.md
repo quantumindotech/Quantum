@@ -207,3 +207,20 @@ flowchart TB
     AG --> QSE & LF
     CL --> LF
     QSE --> PQC
+sequenceDiagram
+    participant H as Human
+    participant UI as UI
+    participant AG as AI Guard
+    participant MCP as MCP Client
+    participant S as MCP Servers
+    participant BC as Blockchain
+    H->>UI: Natural Language Command
+    UI->>AG: Forward Intent
+    AG->>MCP: Request Full Context
+    MCP->>S: tools/list + resources/read
+    S-->>MCP: Contracts, Prices, Wallets, Telemetry
+    MCP-->>AG: Context Ready
+    AG->>BC: Execute Swap / Redeem (dengan pqcProofHash)
+    BC-->>AG: Transaction Result
+    AG->>UI: Human-readable Response
+    UI->>H: Hasil Akhir
