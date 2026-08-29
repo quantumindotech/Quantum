@@ -156,3 +156,54 @@ graph TB
     F --> K[Quantum Swap Engine]
     K --> L[Liquidity Floor & Vault]
 
+# QuantumForge
+
+**Post-Quantum Ledger Blockchain** dengan AI Guard, ML Oracle, IoT Machine-Human Bridge, dan Model Context Protocol (MCP).
+
+[![NIST FIPS 204](https://img.shields.io/badge/NIST-FIPS%20204%20(ML--DSA--87)-blue?style=for-the-badge)](https://csrc.nist.gov/pubs/fips/204/final)
+[![MCP Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-green?style=for-the-badge)](https://modelcontextprotocol.io)
+[![Post-Quantum](https://img.shields.io/badge/Post--Quantum-Ready-purple?style=for-the-badge)](#)
+[![Chainlink](https://img.shields.io/badge/Chainlink-Oracle-375BD2?style=for-the-badge)](https://chain.link)
+[![Foundry](https://img.shields.io/badge/Built%20with-Foundry-FFDB1C?style=for-the-badge)](https://book.getfoundry.sh)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
+> QuantumForge menghubungkan Human, Machine, dan Quantum Sensor secara real-time melalui jembatan otonom dua arah yang diamankan kriptografi post-quantum (ML-DSA-87) dan Oracle Chainlink.
+
+## Fitur Utama
+
+- **Post-Quantum Cryptography**: NIST FIPS 204 ML-DSA-87 Lattice Signature Attestation
+- **AI Guard + ML Oracle + MCP**: Konteks lengkap Smart Contracts, Token, Wallet, dan IoT Telemetry
+- **Quantum Swap Engine (Q-SWAP)**: Swap QNTM ke token manapun (prioritas USDC/USDT)
+- **Liquidity Floor & Jaminan Harga**: Floor price $1.428 USDC dengan cadangan real-time
+- **Chainlink Oracle Integration**: Update harga otomatis dari data feed
+- **12 Pillars of STG** + Master Genesis Wallet
+- **Machine-Human Bridge** dua arah
+
+## Architecture Overview
+
+```mermaid
+flowchart TB
+    subgraph Human["👤 Human Layer"]
+        HI[Human Intent]
+        UI[QuantumForge UI]
+    end
+    subgraph AI["🤖 AI Guard Layer"]
+        MCP[MCP Client]
+        AG[AI Guard + ML Oracle]
+    end
+    subgraph MCP_Server["📡 MCP Servers"]
+        SC[Smart Contracts]
+        TK[Token & Liquidity]
+        IOT[IoT Telemetry]
+    end
+    subgraph Blockchain["⛓️ Post-Quantum Ledger"]
+        QSE[Quantum Swap Engine]
+        LF[Liquidity Floor]
+        PQC[ML-DSA-87]
+        CL[Chainlink Oracle]
+    end
+    HI --> UI --> AG --> MCP
+    MCP <--> SC & TK & IOT
+    AG --> QSE & LF
+    CL --> LF
+    QSE --> PQC
