@@ -1,5 +1,8 @@
 
-# QuantumForge
+# Quantum
+Itu adalah nama mesin besar,serva lah,dude!
+## Quantum Forge 
+Forge adalah bagian dari Quantum disini maka disebutlah "Quantum-Forge"
 
 **Post-Quantum Ledger Blockchain** dengan AI Guard, ML Oracle, dan IoT Machine-Human Bridge berbasis Model Context Protocol (MCP).
 
