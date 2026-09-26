@@ -35,7 +35,7 @@ Forge adalah bagian dari Quantum disini maka disebutlah "Quantum-Forge"
 - Cryptographic hashes untuk setiap transfer yang selesai
 
 ### 4. Master Genesis Wallet & Audited Persistence
-- **Master Genesis Wallet**: `0xD9a1E28224d6d047Eef8712dC97d11A9032b948e`
+- **Master Genesis Wallet**: `0x512Ae495d7182ce0712dff8D5888CFE0D6da2050`
 - Terintegrasi di seluruh jaringan EVM + STG-Chain
 - Quantum Ledger audit report generator (export JSON & CSV yang immutable)
 
@@ -119,7 +119,7 @@ QuantumForge/
 - Cryptographic hashes untuk setiap transfer yang selesai
 
 ### 4. Master Genesis Wallet & Audited Persistence
-- **Master Genesis Wallet**: `0xD9a1E28224d6d047Eef8712dC97d11A9032b948e`
+- **Master Genesis Wallet**: `0x512Ae495d7182ce0712dff8D5888CFE0D6da2050`
 - Terintegrasi di seluruh jaringan EVM + STG-Chain
 - Quantum Ledger audit report generator (export JSON & CSV yang immutable)
 
